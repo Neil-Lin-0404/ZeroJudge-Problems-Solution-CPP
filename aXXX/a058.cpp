@@ -2,6 +2,8 @@
 using namespace std;
 int main()
 {
+    ios::sync_with_stdio(0);
+    cin.tie(0);
     int n;
     cin >> n;
     // m3 = multiplier of 3 , m31 = multiplier of 3 + 1, m32 = multiplier of 3 + 2

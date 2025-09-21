@@ -2,20 +2,10 @@
 using namespace std;
 int main()
 {
-    string n;
-    cin >> n;
-    int oddsum = 0, evensum = 0;
-    for(int i =0;i<n.length();i++)
-    {
-        if(i%2==0)
-        {
-            evensum += n[i]-'0';
-        }
-        else
-        {
-            oddsum += n[i]-'0';
-        }
-    }
-    cout << abs(evensum-oddsum) << endl;
-    return 0;
+    ios::sync_with_stdio(0);
+    string s;cin >> s;
+    int len = s.length(),es=0,os=0;
+    for(int i=0;i<len;i++)
+        if(i%2)os+=s[i]-'0';else es+=s[i]-'0';
+    cout << abs(os-es);
 }
