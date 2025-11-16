@@ -1,12 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main(){
-    int n;
+int main()
+{
+    int n,x,mx;
     cin >> n;
-    int arr[n];
-    for(int i =0;i < n;i++){
-        cin >> arr[i];
-    }
-    sort(arr,arr+n);
-    cout << arr[n-1]   << endl;
+    for (int i = 0; i < n; i++, mx = max(x, mx))
+        cin >> x;
+    cout << mx;
 }

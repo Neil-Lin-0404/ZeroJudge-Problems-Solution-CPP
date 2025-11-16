@@ -4,19 +4,15 @@ int main()
 {
     cin.tie(0);
     int n;
-    while(cin >> n){
-    vector<int>v;
+    while(cin >> n && n != EOF){
+    string s;
     while(n!=0)
     {
-        v.push_back(n%2);
+        s += to_string(n%2);
         n/=2;
     }
-    for(int i=v.size()-1;i>=0;i--)
-    {
-        cout<<v[i];
-    }
-    cout << '\n';
-    
+    reverse(s.begin(), s.end());
+    cout << s << '\n';
 }
     return 0;
 }
